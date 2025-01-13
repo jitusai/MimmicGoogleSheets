@@ -47,11 +47,15 @@ This README provides an overview of the Google Sheet Clone project, outlining th
 1. **Text Formatting**:        Select cells or single cell and click the respective buttons (Bold, Italic, Font Size).
 2. **Mathematical Functions**: Select Multiplecells, choose a function from the dropdown, and click "Apply" Then the result will be popup as alert message at 
                                Middle of screen.
-3. **Data Quality Functions**: Select cells, choose a function from the dropdown, and click "Apply".
-4. **Cell Styling**:           Select cells or cell, Click on the color pickers to change font and background colors.
-5. **Row/Column Management**:  Click the respective buttons to add or delete rows/columns,  The rows will add&delete takes place From bottom of Sheet  And the 
+3. **FormulaBar**  :           For formula bar,Select the multiple cells for what cells u want u made opertion like(sum,min,max,avg function ) by simply typing 
+                               that above keywords in the formula bar ,while selecting datacells please select one empty cell to display the opertion result in 
+                               it.which means if i want to make sum opertion for 2 cells then with that two cells i can choose another third cell(the third cell 
+                               which is empty cell either left or right or below the data cell and this cell is helpful for display result).  
+4. **Data Quality Functions**: Select cells, choose a function from the dropdown, and click "Apply".
+5. **Cell Styling**:           Select cells or cell, Click on the color pickers to change font and background colors.
+6. **Row/Column Management**:  Click the respective buttons to add or delete rows/columns,  The rows will add&delete takes place From bottom of Sheet  And the 
                                column add& Deletion takes place at Right side end of Sheet.
-6. **Search**:                 Click the search icon, enter the search term, if that term is present in the sheet then it highlight matching cells with yellow 
+7. **Search**:                 Click the search icon, enter the search term, if that term is present in the sheet then it highlight matching cells with yellow 
                                else it shows an message no result found.
-7. **Save/Load**:              Use the save and load buttons to manage spreadsheet data,For save option once clicked it save in our system,for load sheet it needs 
+8. **Save/Load**:              Use the save and load buttons to manage spreadsheet data,For save option once clicked it save in our system,for load sheet it needs 
                                to be in json format only if its then it fetches the data else it shows an message like "Please Select a .json file.
