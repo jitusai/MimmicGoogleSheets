@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mimmic Google Sheet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="toolbar">
+      <div id="toolbar-left">
+        <button id="boldButton">B</button>
+        <button id="italicButton">I</button>
+        <button id="increaseFontButton">A^</button>
+        <button id="decreaseFontButton">A-</button>
+
+        <select id="mathFunctionSelector">
+          <option value="" disabled selected>ΣAutoSum</option>
+          <option value="sum">SUM</option>
+          <option value="average">AVERAGE</option>
+          <option value="max">MAX</option>
+          <option value="min">MIN</option>
+          <option value="count">COUNT</option>
+        </select>
+        <button id="applyFunctionButton">Apply</button>
+        <select id="dataQualitySelector">
+          <option value="" disabled selected>DataQuality Functions</option>
+          <option value="trim">TRIM</option>
+          <option value="uppercase">UPPERCASE</option>
+          <option value="lowercase">LOWERCASE</option>
+          <option value="removeDuplicates">REMOVE DUPLICATES</option>
+          <option value="findReplace">FIND & REPLACE</option>
+        </select>
+
+        <input
+          type="text"
+          id="findInput"
+          placeholder="Find"
+          style="display: none"
+        />
+        <input
+          type="text"
+          id="replaceInput"
+          placeholder="Replace"
+          style="display: none"
+        />
+        <button id="applyDataQualityButton">Apply</button>
+
+        <input
+          type="text"
+          id="Formula-Bar"
+          placeholder="Enter Formula(sum,avg,min,max)"
+        />
+      </div>
+      <div id="toolbar-right">
+        <input type="color" id="fontColorButton" />
+        <input type="color" id="bgColorButton" />
+        <button id="addRowButton">Add Row</button>
+        <button id="deleteRowButton">Delete Row</button>
+        <button id="addColumnButton">Add Column</button>
+        <button id="deleteColumnButton">Delete Column</button>
+        <img
+          id="searchIcon"
+          src="search-icon.png"
+          alt="Search"
+          style="width: 20px; height: 20px; cursor: pointer"
+        />
+        <button id="saveButton">Save</button>
+        <button id="loadButton">Load</button>
+      </div>
+    </div>
+
+    <div id="spreadsheet-container">
+      <table id="spreadsheet">
+        <!-- Table Rows-->
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
